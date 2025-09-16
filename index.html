@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced E-Commerce</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>ShopEasy</h1>
+        <div class="controls">
+            <input type="text" id="search" placeholder="Search products...">
+            <select id="categoryFilter">
+                <option value="all">All Categories</option>
+            </select>
+            <input type="number" id="minPrice" placeholder="Min Price">
+            <input type="number" id="maxPrice" placeholder="Max Price">
+            <button id="toggleMode">Dark/Light Mode</button>
+            <div class="cart">
+                Cart (<span id="cart-count">0</span>)
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="products" id="products"></div>
+    </main>
+
+    <div class="cart-modal" id="cartModal">
+        <h2>Your Cart</h2>
+        <div id="cartItems"></div>
+        <p>Total: $<span id="totalPrice">0</span></p>
+        <button id="checkout">Checkout</button>
+        <button id="closeCart">Close</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
